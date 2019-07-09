@@ -6,8 +6,14 @@ import router from './router'
 import axios from 'axios'
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
+import Vant from 'vant';
+import 'vant/lib/index.css';
+import fastclick from 'fastclick';
+
+Vue.use(Vant);
 Vue.prototype.$http = axios
 Vue.use(MintUI)
+fastclick.attach(document.body);
 
 Vue.config.productionTip = false
 
