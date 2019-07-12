@@ -9,11 +9,15 @@ import 'mint-ui/lib/style.css'
 import Vant from 'vant';
 import 'vant/lib/index.css';
 import fastclick from 'fastclick';
+import VueLazyload from 'vue-lazyload'
 
 Vue.use(Vant);
 Vue.prototype.$http = axios
 Vue.use(MintUI)
 fastclick.attach(document.body);
+Vue.use(VueLazyload, {
+  loading: 'assets/loading.gif'
+})
 
 Vue.config.productionTip = false
 

@@ -16,7 +16,8 @@ export default {
   },
   methods: {
     search(){
-      this.$route.push('/search')
+      // this.$router.push('/search')
+      this.$emit("search")
     }
   },
 };
