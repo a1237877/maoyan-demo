@@ -26,8 +26,14 @@ export default new Router({
       path:'/home',
       name:'Home',
       component:Home,
-      redirect:'/home/recommand',
+      // redirect:'/home/recommand',
       children:[
+        {
+          name:'recommand',
+          path:'/',
+          redirect:'/home/recommand',
+          component:recommand
+        },
         {
           name:'recommand',
           path:'recommand',
@@ -39,13 +45,13 @@ export default new Router({
           component:TV
         },
         {
-          name:'show',
           path:'show',
+          name:'show',
           component:show
         },
         {
-          name:'book',
           path:'book',
+          name:'book',
           component:book
         }
       ]
@@ -59,14 +65,12 @@ export default new Router({
         {
           name: 'intheater',
           path: 'intheater',
-          component: MoviesInTheater,
-          meta: 1
+          component: MoviesInTheater
         },
         {
           name: 'coming',
           path: 'coming',
-          component: MoviesComing,
-          meta: 2
+          component: MoviesComing
         }
       ]
     },

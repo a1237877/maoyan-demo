@@ -14,46 +14,26 @@
         />
       </div>
     </div>
-
+ 
     <div class="navBar">
         <router-link tag="div" to="/home/recommand" active-class="active" class="hot-item">推荐</router-link>
         <router-link tag="div" to="/home/TV" active-class="active" class="hot-item">电视剧</router-link>
         <router-link tag="div" to="/home/show" active-class="active" class="hot-item">综艺</router-link>
         <router-link tag="div" to="/home/book" active-class="active" class="hot-item">书籍</router-link>
     </div>
-    <!-- <van-tabs v-model="active" animated>
-      <van-tab title="推荐">
-        111
-        
-      </van-tab>
-      <van-tab title="电视剧">内容 2</van-tab>
-      <van-tab title="综艺">内容 3</van-tab>
-      <van-tab title="演唱会">内容 4</van-tab>
-      <van-tab title="书籍">内容 4</van-tab>
-    </van-tabs> -->
-
+   
     <router-view />
-
-    
-
-    <div class="tabBar">
-      <van-tabbar route active-color="#e8323c">
-        <van-tabbar-item replace to="/home" icon="home-o">首页</van-tabbar-item>
-        <van-tabbar-item replace to="/movie" icon="search">电影</van-tabbar-item>
-        <van-tabbar-item replace to="/cinema" icon="coupon-o">影院</van-tabbar-item>
-        <van-tabbar-item replace to="/mine" icon="contact">我的</van-tabbar-item>
-      </van-tabbar>
-    </div>
+    <v-tabBar></v-tabBar>
   </div>
 </template>
 
 <script>
 import city from "@/components/city/city";
 import search from '@/components/search'
+import tabBar from '@/components/tabBar'
 export default {
   data() {
     return {
-      active: 0,
      
     };
   },
@@ -62,7 +42,8 @@ export default {
   },
   components: {
     "v-city": city,
-    "v-search":search
+    "v-search":search,
+    "v-tabBar":tabBar
   }
 };
 </script>
@@ -108,6 +89,9 @@ img {
   margin-left 5px
   margin-top 15px
   .hot-item
+    margin-right 22px
+    margin-left 22px
+    height 35px
     padding 0
     text-align center
     flex 1
