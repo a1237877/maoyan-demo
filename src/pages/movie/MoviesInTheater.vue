@@ -27,15 +27,21 @@
                   <span class="iconfont icon-shijue3dimax" v-if="movie.version">
               </span>
                 </div>
-                <div class="score">
-                  <span class="suffix">观众评</span>
+                <div class="score" v-if="!movie.globalReleased">
+                  <span class="grade" >{{movie.wish}}</span>
+                  <span class="suffix" >人想看</span>
+                  
+                </div>
+                <div class="score" v-else>
+                  <span class="suffix" >观众评</span>
                   <span class="grade">{{ movie.sc }}</span>
                 </div>
                 <p class="actor">主演: {{ movie.star }}</p>
                 <p class="show-info">{{ movie.showInfo }}</p>
             </div>
             <div class="btn">
-              <a href="javascript" class="go">购票</a>
+              <a href="javascript" class="ys" v-if="!movie.globalReleased">预售</a>
+              <a href="javascript" class="go" v-else >购买</a>
             </div>
           </div>   
         </div>

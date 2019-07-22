@@ -147,7 +147,8 @@ export default {
     color: #666;
   }
     img {
-      width: 35%;
+      width: 30%;
+      height 25px
       margin-bottom: 2px;
     }
 
