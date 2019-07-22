@@ -12,7 +12,7 @@
         <img src="../../assets/sousuo1.png" alt="">
       </div>
     </div>
-    <div class="page_hd">
+    <!-- <div class="page_hd">
       <div class="left">
         <img src="../../images/dianying.png" alt="">
         <div>
@@ -24,13 +24,14 @@
           <div class="piaofang"><span class="acount">11560.7万</span></div>
           <div class="arrow"><span>></span></div>
       </div>
-    </div>
+    </div> -->
     <router-view></router-view>
     <v-tabBar></v-tabBar>
   </div>
 </template>
 
 <script>
+
 import city from "@/components/city/city";
 import tabBar from '@/components/tabBar';
 import cityMovie from '@/components/city/cityMovie';
@@ -40,14 +41,18 @@ export default {
     "v-city": city,
     "v-tabBar":tabBar,
     "v-cityMovie":cityMovie
-  }
+  },
+  mounted() {
+     
+  },
 };
 </script>
 
 <style lang="stylus" scoped>
 
 .header
-  
+  position fixed
+  top 0
   width 100%
   background #dd403b
   display flex

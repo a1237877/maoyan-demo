@@ -59,15 +59,12 @@ body, html {
 }
 
 .header {
-  position: relative;
   width: 100%;
   height: 50px;
   display: flex;
 }
 
-.tabBar {
-  position: fixed;
-}
+
 
 .right {
   flex: 1;

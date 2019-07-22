@@ -1,5 +1,11 @@
 <template>
-  <div>
+  <div class="header1">
+    <div>111</div>
+    <div>111</div>
+    <div>111</div>
+    <div>111</div>
+    <div>111</div>
+    <div>111</div>
     <div>111</div>
     <div>111</div>
     <div>111</div>
@@ -40,6 +46,9 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+.header1{
+  margin-top: 70px;
+ 
+}
 </style>

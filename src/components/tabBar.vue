@@ -133,7 +133,7 @@ export default {
   background-color: #fff;
   position: fixed;
   left: 0px;
-  bottom: 5px;
+  bottom: 0px;
   display: flex;
   z-index: 999;
 }
