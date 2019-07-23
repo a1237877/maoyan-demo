@@ -128,7 +128,6 @@ export default {
 <style>
 .swiper {
   height: 120px;
-  background: yellow;
 }
 .swiper img {
   width: 100%;
